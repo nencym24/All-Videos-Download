@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionActivity">
+
+    <LinearLayout
+        android:id="@+id/linearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/txtOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="OK! "
+            android:textColor="#0027FF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="we need some access!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/txtOk"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgCard"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/allow"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/linearText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Storage &amp; Media"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imgCard"
+        app:layout_constraintTop_toTopOf="@id/imgCard"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Don't worry your data is private"
+        android:textColor="#7A7979"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/txtStorage"
+        app:layout_constraintTop_toBottomOf="@id/txtStorage"
+        tools:ignore="TextSizeCheck" />
+
+
+
+    <ImageView
+        android:id="@+id/btnAllow"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/_50sdp"
+        android:textSize="@dimen/_12sdp"
+        android:src="@drawable/btnallow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="@dimen/_40sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="@id/btnAllow"
+        app:layout_constraintEnd_toEndOf="@id/btnAllow"
+        app:layout_constraintTop_toTopOf="@id/btnAllow"
+        app:layout_constraintBottom_toBottomOf="@id/btnAllow"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

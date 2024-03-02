@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoDownloadActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/actionbar"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearText"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Video Downloader"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/txtOk" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgBackArrow"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:src="@drawable/menu" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgSnackVideo"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/snackvideo"
+        app:layout_constraintTop_toBottomOf="@id/rlyHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtSnackVideo"
+        app:layout_constraintTop_toBottomOf="@id/imgSnackVideo"
+        app:layout_constraintStart_toStartOf="@id/imgSnackVideo"
+        app:layout_constraintEnd_toEndOf="@id/imgSnackVideo"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snack Video"/>
+
+    <ImageView
+        android:id="@+id/imgShareChat"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/sharechat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rlyHeader"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtShareChat"
+        app:layout_constraintTop_toBottomOf="@id/imgShareChat"
+        app:layout_constraintStart_toStartOf="@id/imgShareChat"
+        app:layout_constraintEnd_toEndOf="@id/imgShareChat"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShareChat"/>
+
+    <ImageView
+        android:id="@+id/imgRoposo"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/roposo"
+        app:layout_constraintTop_toBottomOf="@id/rlyHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtRoposo"
+        app:layout_constraintTop_toBottomOf="@id/imgRoposo"
+        app:layout_constraintStart_toStartOf="@id/imgRoposo"
+        app:layout_constraintEnd_toEndOf="@id/imgRoposo"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roposo"/>
+
+    <ImageView
+        android:id="@+id/imgLikee"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/likee"
+        app:layout_constraintTop_toBottomOf="@id/txtSnackVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtLikee"
+        app:layout_constraintTop_toBottomOf="@id/imgLikee"
+        app:layout_constraintStart_toStartOf="@id/imgLikee"
+        app:layout_constraintEnd_toEndOf="@id/imgLikee"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likee"/>
+
+    <ImageView
+        android:id="@+id/imgTwitter"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/twitter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtShareChat"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtTwitter"
+        app:layout_constraintTop_toBottomOf="@id/imgTwitter"
+        app:layout_constraintStart_toStartOf="@id/imgTwitter"
+        app:layout_constraintEnd_toEndOf="@id/imgTwitter"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter"/>
+
+    <ImageView
+        android:id="@+id/imgWP"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/wpbusiness"
+        app:layout_constraintTop_toBottomOf="@id/txtRoposo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtWP"
+        app:layout_constraintTop_toBottomOf="@id/imgWP"
+        app:layout_constraintStart_toStartOf="@id/imgWP"
+        app:layout_constraintEnd_toEndOf="@id/imgWP"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WA&amp;WA Business"/>
+
+    <ImageView
+        android:id="@+id/imgTikTok"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/tiktok"
+        app:layout_constraintTop_toBottomOf="@id/txtLikee"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtTikTok"
+        app:layout_constraintTop_toBottomOf="@id/imgTikTok"
+        app:layout_constraintStart_toStartOf="@id/imgTikTok"
+        app:layout_constraintEnd_toEndOf="@id/imgTikTok"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TikTok"/>
+
+    <ImageView
+        android:id="@+id/imgFaceBook"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTwitter"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtfacebook"
+        app:layout_constraintTop_toBottomOf="@id/imgFaceBook"
+        app:layout_constraintStart_toStartOf="@id/imgFaceBook"
+        app:layout_constraintEnd_toEndOf="@id/imgFaceBook"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"/>
+
+    <ImageView
+        android:id="@+id/imgInstagram"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/instagram"
+        app:layout_constraintTop_toBottomOf="@id/txtWP"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/txtInstagram"
+        app:layout_constraintTop_toBottomOf="@id/imgInstagram"
+        app:layout_constraintStart_toStartOf="@id/imgInstagram"
+        app:layout_constraintEnd_toEndOf="@id/imgInstagram"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"/>
+
+    <ImageView
+        android:id="@+id/imgThreads"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/threads"
+        app:layout_constraintTop_toBottomOf="@id/txtTikTok"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/imgThreads"
+        app:layout_constraintStart_toStartOf="@id/imgThreads"
+        app:layout_constraintEnd_toEndOf="@id/imgThreads"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Threads"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

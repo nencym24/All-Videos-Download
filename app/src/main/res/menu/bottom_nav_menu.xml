@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/statusSaver"
+        android:title="Status Saver"
+        android:icon="@drawable/statussaver_file"/>
+
+    <item android:id="@+id/videoPlayer"
+        android:title="Video Player"
+        android:icon="@drawable/videoplayer_file"/>
+
+
+</menu>

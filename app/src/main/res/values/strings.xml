@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AllVideosDownload</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="music">Music</string>
+    <string name="video">Video</string>
+    <string name="gallary">Gallary</string>
+
+    <style name="sticker_packs_list_item_author_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <string name="enter_url">Enter Url</string>
+    <string name="enter_valid_url">Enter Valid Url</string>
+</resources>

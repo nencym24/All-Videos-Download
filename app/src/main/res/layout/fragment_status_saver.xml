@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.StatusSaverFragment">
+
+    <ImageView
+        android:id="@+id/imgSaveStatus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/savestatus"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSaveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save\nStatus"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/imgSaveStatus"
+        app:layout_constraintBottom_toBottomOf="@id/imgSaveStatus"
+        app:layout_constraintStart_toStartOf="@id/imgSaveStatus"
+        android:layout_marginHorizontal="@dimen/_100sdp"/>
+
+    <ImageView
+        android:id="@+id/imgVideoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/vidplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgSaveStatus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video\nPlayer"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintTop_toTopOf="@id/imgVideoPlayer"
+        app:layout_constraintBottom_toBottomOf="@id/imgVideoPlayer"
+        app:layout_constraintEnd_toEndOf="@id/txtSaveStatus"
+        app:layout_constraintStart_toStartOf="@id/txtSaveStatus"/>
+
+    <ImageView
+        android:id="@+id/imgVideoDownloader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/videodownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgVideoPlayer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video\nDownloader"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintTop_toTopOf="@id/imgVideoDownloader"
+        app:layout_constraintBottom_toBottomOf="@id/imgVideoDownloader"
+        app:layout_constraintStart_toStartOf="@id/txtSaveStatus"
+        app:layout_constraintEnd_toEndOf="@id/txtSaveStatus"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

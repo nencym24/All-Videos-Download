@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InstagramActivity">
+
+        <RelativeLayout
+            android:id="@+id/rlyHeader"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/actionbar"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearText"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Video Downloader"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/txtOk" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgBackArrow"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:src="@drawable/menu" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgSnackcard"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/instagramcard"
+            app:layout_constraintTop_toBottomOf="@id/rlyHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="Instagram"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgSnackcard"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard"
+            app:layout_constraintTop_toTopOf="@id/imgSnackcard"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgFacebookcard"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/facebookcard2"
+            app:layout_constraintTop_toBottomOf="@id/imgSnackcard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download from Stories"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintBottom_toBottomOf="@id/imgFacebookcard"
+            app:layout_constraintEnd_toEndOf="@id/imgFacebookcard"
+            app:layout_constraintTop_toTopOf="@id/imgFacebookcard"
+            app:layout_constraintStart_toStartOf="@id/imgFacebookcard"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgpastelink"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintTop_toBottomOf="@id/imgFacebookcard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/pastelink"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/instaURL"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@null"
+            android:hint="paste link"
+            android:minHeight="48dp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:maxLines="2"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#7A7979"
+            android:textColorHint="#7A7979"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imgpastelink"
+            app:layout_constraintStart_toStartOf="@id/imgpastelink"
+            app:layout_constraintTop_toTopOf="@id/imgpastelink"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgDownload"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/instabtn"
+            app:layout_constraintStart_toStartOf="@id/imgpastelink"
+            app:layout_constraintTop_toBottomOf="@id/imgpastelink"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Download"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imgDownload"
+            app:layout_constraintEnd_toEndOf="@id/imgDownload"
+            app:layout_constraintStart_toStartOf="@id/imgDownload"
+            app:layout_constraintTop_toTopOf="@id/imgDownload"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/btnpaste"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/instabtn"
+            app:layout_constraintEnd_toEndOf="@id/imgpastelink"
+            app:layout_constraintTop_toBottomOf="@id/imgpastelink"
+            tools:ignore="TextSizeCheck"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/btnpaste"
+            app:layout_constraintStart_toStartOf="@id/imgDownload"
+            app:layout_constraintTop_toBottomOf="@id/imgDownload" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Paste"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="@id/btnpaste"
+            app:layout_constraintEnd_toEndOf="@id/btnpaste"
+            app:layout_constraintStart_toStartOf="@id/btnpaste"
+            app:layout_constraintTop_toTopOf="@id/btnpaste"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="View Stories and Download from private Account"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toBottomOf="@+id/btnpaste"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/btnLogin"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/installoginbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLogin"
+            tools:ignore="TextSizeCheck"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="@id/btnLogin"
+            app:layout_constraintEnd_toEndOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="@id/btnLogin"
+            app:layout_constraintTop_toTopOf="@id/btnLogin"
+            tools:ignore="TextSizeCheck" />
+
+
+        <ImageView
+            android:id="@+id/imgSnackcard2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_600sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+        <TextView
+            android:id="@+id/txtDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="How to Download"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toTopOf="@id/imgSnackcard2"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/txtHow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="1. Open Instagram"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toBottomOf="@+id/txtDownload"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgHow1"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/instagramhow1"
+            app:layout_constraintTop_toBottomOf="@+id/txtHow1"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtHow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="2. Share with All in One Status Saver"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toBottomOf="@+id/imgHow1"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgHow2"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/instagramhow2"
+            app:layout_constraintTop_toBottomOf="@+id/txtHow2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="Or Download using copied link"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toBottomOf="@+id/imgHow2"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/txtHow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="1. Open Instagram"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toBottomOf="@+id/txtOr"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgHow3"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/instagramhow3"
+            app:layout_constraintTop_toBottomOf="@+id/txtHow3"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtHow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="2. Open All in one status Saver"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintTop_toBottomOf="@+id/imgHow3"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imgHow4"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/instagramhow4"
+            app:layout_constraintTop_toBottomOf="@+id/txtHow4"
+            app:layout_constraintStart_toStartOf="@id/imgSnackcard2"
+            app:layout_constraintEnd_toEndOf="@id/imgSnackcard2"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

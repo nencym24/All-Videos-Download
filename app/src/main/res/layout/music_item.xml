@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/musiccard"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy-Birthday-To-You-Happy..."
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        app:layout_constraintTop_toTopOf="@id/imgCard"
+        app:layout_constraintStart_toStartOf="@id/imgCard"/>
+
+    <TextView
+        android:id="@+id/txtSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Wishes Plus"
+        android:textColor="#7A7979"
+        android:textSize="@dimen/_9sdp"
+        android:maxLength="26"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintStart_toStartOf="@id/txtSong"
+        app:layout_constraintTop_toBottomOf="@id/txtSong"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
